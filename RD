@@ -32,14 +32,17 @@
             color: #ffffff; /* White */
             padding: 10px;
             width: 100%;
-            display: flex;
-            justify-content: space-around;
         }
 
         nav a {
             color: #ffffff; /* White */
             text-decoration: none;
             font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: pink;
         }
 
         section {
@@ -105,32 +108,13 @@
         li {
             margin-bottom: 8px;
         }
-
-        img {
-            max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-            height: auto; /* Maintain the aspect ratio of the image */
-            border-radius: 4px; /* Optional: Add border-radius for a rounded appearance */
-        }
-
-        @media only screen and (max-width: 575px) {
-            section {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
     </style>
 </head>
 
 <body>
 
     <nav>
-        <a href="#professional-experience">Professional Experience</a>
-        <a href="#university">University at Albany</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#about-me">About Me</a>
-        <a href="#contact">Contact</a>
-        <a href="#portfolio">Portfolio</a>
+        <p><a href="#education">Jump to Education</a></p>
     </nav>
 
     <header>
@@ -138,47 +122,57 @@
         <p>This website will provide insightful information on how to begin your journey in the law field.</p>
     </header>
 
-    <section id="professional-experience">
+    <section>
         <h2>Professional Experience</h2>
         <table>
-            <!-- ... -->
+            <tr>
+                <th>Employer</th>
+                <th>Job Title</th>
+                <th>Years</th>
+            </tr>
+            <tr>
+                <td>NYS Supreme Court</td>
+                <td>Legal Assistant</td>
+                <td>1 year</td>
+            </tr>
+            <tr>
+                <td>White Plains Youth Court</td>
+                <td>Assistant</td>
+                <td>4 years</td>
+            </tr>
+            <tr>
+                <td>Jaffe and Asher LLP</td>
+                <td>Paralegal</td>
+                <td>2 years</td>
+            </tr>
         </table>
     </section>
 
-    <section id="university">
+    <section>
         <h2>University at Albany</h2>
         <dl>
-            <!-- ... -->
+            <dt>Junior</dt>
+            <dd><a href="https://www.albany.edu" target="_blank">University at Albany</a></dd>
         </dl>
     </section>
 
-    <section id="skills">
+    <section>
         <h2>Skills</h2>
         <ul>
-            <!-- ... -->
+            <li>Legal Research</li>
+            <li>Communication Skills</li>
+            <li>Time Management</li>
+            <!-- Add more skills as needed -->
         </ul>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <dl>
-            <!-- ... -->
+            <dt>Major: Informatics</dt>
+            <dt>Minor: Communication</dt>
+            <dd><a href="https://www.albany.edu/cehc/programs/bs-informatics" target="_blank">University at Albany - Informatics</a></dd>
         </dl>
-    </section>
-
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>Welcome to my personal website! I am passionate about the law and excited to share my journey with you.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me. You can contact me via email at annia@example.com.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Explore my work and projects in the field of law. Check back for updates on my latest accomplishments.</p>
     </section>
 
 </body>
