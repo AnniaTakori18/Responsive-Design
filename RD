@@ -32,6 +32,8 @@
             color: #ffffff; /* White */
             padding: 10px;
             width: 100%;
+            display: flex;
+            justify-content: space-around;
         }
 
         nav a {
@@ -41,8 +43,7 @@
         }
 
         nav a:hover {
-            background-color: white;
-            color: pink;
+            text-decoration: underline;
         }
 
         section {
@@ -114,7 +115,10 @@
 <body>
 
     <nav>
-        <p><a href="#education">Jump to Education</a></p>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#honorable-mention">Honorable Mention</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <header>
@@ -173,6 +177,21 @@
             <dt>Minor: Communication</dt>
             <dd><a href="https://www.albany.edu/cehc/programs/bs-informatics" target="_blank">University at Albany - Informatics</a></dd>
         </dl>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <!-- Add content for the Achievements section -->
+    </section>
+
+    <section id="honorable-mention">
+        <h2>Honorable Mention</h2>
+        <!-- Add content for the Honorable Mention section -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Add content for the Contact section -->
     </section>
 
 </body>
